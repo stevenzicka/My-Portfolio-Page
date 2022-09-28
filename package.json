@@ -2,31 +2,23 @@
   "name": "portfolio-page-main",
   "version": "1.0.0",
   "description": "",
-  "main": "portfolio.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js",
-    "deploy": "vercel --prod"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenzicka/My-Portfolio-Page.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenzicka/My-Portfolio-Page/issues"
+  },
+  "homepage": "https://github.com/stevenzicka/My-Portfolio-Page#readme",
   "dependencies": {
-    "@babel/core": "^7.19.1",
-    "@babel/preset-env": "^7.19.1",
-    "babel-loader": "^8.2.5",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^11.0.0",
     "express": "^4.18.1",
-    "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
-    "nodemon": "^2.0.20",
-    "vercel": "^28.4.3",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.0",
-    "webpack-merge": "^5.8.0"
+    "nodemon": "^2.0.20"
   }
 }
