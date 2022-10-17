@@ -22,6 +22,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.headshot {
+  width: 130px;
+  height: 200px;
+  border-radius: 50px;
+}
+
 /* CSS Resets */
 * {
   margin: 0;
