@@ -23,8 +23,8 @@ html {
 }
 
 .headshot {
-  width: 150px;
-  height: 225px;
+  width: 150px !important;
+  height: 170px !important; 
   border-radius: 50px;
 }
 
@@ -85,15 +85,6 @@ nav {
   
   nav ul li {
     font-weight: var(--bold-font);
-  }
-
-  .burger-menu {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
   }
 
   .hero {
@@ -193,6 +184,7 @@ nav {
   }
   
   .projects-container {
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,15 +249,6 @@ nav {
     height: 500px;
   }
 
-/**
-  footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
-  }
-**/
-
     /* Tooltip container */
   .tooltip {
     position: relative;
@@ -297,8 +280,12 @@ nav {
     nav {
         padding: 1.5rem 1rem;
     }
+    
+    .socials {
+      margin: -10px;
+    }
 
-    nav ul {
+    /* nav ul {
         position: fixed;
         background-color: var(--bg-color);
         flex-direction: column;
@@ -308,21 +295,18 @@ nav {
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
-    }
+    } */
     
     nav ul li {
         margin: 8px;
     }
-
-    .burger-menu {
-        display: block;
-      }
     
     nav ul.show {
         transform: translateX(0);
     }
 
     .hero {
+      flex-direction: column;
         margin-top: -4rem;
         width: 30rem;
     }
@@ -341,20 +325,18 @@ nav {
     }
 
     .icon {
-        width: 5.875rem;
-        height: 5.25rem;
+      width: 5.875rem;
+      height: 5.25rem;
     }
 
     .projects-container {
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .projects-container {
         width: 20.875rem;
-    }
-
-    .contact-form-container {
-        max-width: 23.75rem;
     }
 }
 
