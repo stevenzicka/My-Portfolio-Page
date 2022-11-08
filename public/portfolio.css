@@ -276,7 +276,7 @@ nav {
   }
 
   /**For mobile**/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
     nav {
         padding: 1.5rem 1rem;
     }
@@ -285,18 +285,6 @@ nav {
       margin: -10px;
     }
 
-    /* nav ul {
-        position: fixed;
-        background-color: var(--bg-color);
-        flex-direction: column;
-        top: 86px;
-        left: 10%;
-        width: 80%;
-        text-align: center;
-        transform: translateX(120%);
-        transition: transform 0.5s ease-in;
-    } */
-    
     nav ul li {
         margin: 8px;
     }
@@ -340,7 +328,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 720px) {
     .hero img {
         height: 37.5rem;
         width: 23rem;
@@ -353,6 +341,10 @@ nav {
     .project-container {
         width: 17.875rem;
     }
+
+    .more-about p {
+      text-align: justify;
+  }
 
     .contact-form-container {
         max-width: 17.75rem;
