@@ -18,8 +18,12 @@
 }
 /* Variables end */
 
-html {
+html, body {
   scroll-behavior: smooth;
+  font-family: var(--font-family);
+  margin: 0; padding: 0; width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
 }
 
 .headshot {
@@ -46,10 +50,6 @@ a {
 
 a:hover {
   color: var(--secondary-color);
-}
-
-body {
-  font-family: var(--font-family);
 }
 
 nav {
@@ -85,6 +85,23 @@ nav {
   
   nav ul li {
     font-weight: var(--bold-font);
+  }
+
+  .burger-menu {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 10%;
+    width: 10%;
+    border: 0;
+    background-color: transparent;
+    display: none;
+  }
+
+  .bars {
+    cursor: pointer;
+    height: 50%;
+    width: 50%;
   }
 
   .hero {
@@ -244,9 +261,9 @@ nav {
     height: 1rem;
   }
 
-  #dog {
-    width: 500px;
-    height: 500px;
+  .dog {
+    width: 80%;
+    height: 80%;
   }
 
     /* Tooltip container */
@@ -329,6 +346,32 @@ nav {
 }
 
 @media screen and (max-width: 720px) {
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    nav ul li {
+      margin: 8px;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
     .hero img {
         height: 37.5rem;
         width: 23rem;
@@ -350,5 +393,11 @@ nav {
         max-width: 17.75rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+  nav {
+    size: 50%;
+  }
+} 
 
 
