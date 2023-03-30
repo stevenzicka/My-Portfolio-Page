@@ -243,7 +243,7 @@ nav {
     flex-direction: column;
     position: fixed;
     background-color: #fff;
-    right: 95%;
+    left: 0%;
     bottom: 75%;
     border-radius: 10px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
@@ -262,8 +262,8 @@ nav {
   }
 
   .dog {
-    width: 80%;
-    height: 80%;
+    width: 500px;
+    height: 500px;
   }
 
     /* Tooltip container */
@@ -296,10 +296,6 @@ nav {
 @media screen and (max-width: 900px) {
     nav {
         padding: 1.5rem 1rem;
-    }
-    
-    .socials {
-      margin: -10px;
     }
 
     nav ul li {
@@ -349,6 +345,7 @@ nav {
     nav {
       padding: 1.5rem 1rem;
     }
+
     nav ul {
       position: fixed;
       background-color: var(--bg-color);
@@ -364,17 +361,25 @@ nav {
     nav ul li {
       margin: 8px;
     }
-  
     .burger-menu {
       display: block;
     }
-  
     nav ul.show {
       transform: translateX(0);
     }
     .hero img {
         height: 37.5rem;
         width: 23rem;
+    }
+    .socials {
+      flex-direction: row;
+      bottom: 83%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    img.socicon {
+      border-radius: 10px;
     }
 
     .bio {
@@ -384,6 +389,9 @@ nav {
     .project-container {
         width: 17.875rem;
     }
+    .more-about {
+      padding: 20px;
+    }
 
     .more-about p {
       text-align: justify;
@@ -392,11 +400,18 @@ nav {
     .contact-form-container {
         max-width: 17.75rem;
     }
+    .dog {
+      height: 80%;
+      width: 80%;
+    }
 }
 
 @media screen and (max-width: 600px) {
   nav {
     size: 50%;
+  }
+  .socials {
+    bottom: 84%;
   }
 } 
 
